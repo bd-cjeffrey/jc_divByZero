@@ -103,10 +103,10 @@ jobs:
 
 
       
-      - name: Commit and push snippet analysis results
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add .
-          git diff --staged --quiet || git commit -m "Adding license findings via GitHub Actions"
-          git push || echo "No changes to commit"
+    #  - name: Commit and push snippet analysis results
+    #    run: |
+    #      git config --local user.email "action@github.com"
+    #      git config --local user.name "GitHub Action"
+    #      git add .
+    #      git diff --staged --quiet || git commit -m "Adding license findings via GitHub Actions"
+    #      git push || echo "No changes to commit"
